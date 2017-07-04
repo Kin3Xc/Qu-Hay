@@ -1,7 +1,7 @@
 {
   "name": "queHay",
   "version": "0.0.1",
-  "author": "Ionic Framework",
+  "author": "Elkin Urango",
   "homepage": "http://ionicframework.com/",
   "private": true,
   "scripts": {
@@ -35,5 +35,5 @@
     "@ionic/cli-plugin-ionic-angular": "1.3.1",
     "typescript": "2.3.4"
   },
-  "description": "An Ionic project"
+  "description": "App for list local news"
 }
