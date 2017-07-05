@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, ModalController } from 'ionic-angular';
 
 @Component({
   selector: 'page-oferta',
@@ -7,8 +7,20 @@ import { NavController } from 'ionic-angular';
 })
 export class OfertaPage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public modal: ModalController) {
 
+  }
+
+  openModalOferta(){
+
+  	let data = {
+  		name: "Elkin Urango",
+  		cargo: "Developer"
+  	};
+
+  	const modalOferta = this.modal.create('ModalPageOfertaPage', {data : data});
+
+  	modalOferta.present();
   }
 
 }
